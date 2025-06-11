@@ -43,8 +43,10 @@ template <typename T>
 SimpleVector<T>::SimpleVector(const SimpleVector& other)
 : currentSize(other.currentSize), currentCapacity(other.currentCapacity){
 	data = new T[currentCapacity];
-	for (int i = 0; i < currentSize; i++) {
-		data[i] = other.data[i];
+	if (other != nullptr) {
+		for (int i = 0; i < currentSize; i++) {
+			data[i] = other.data[i];
+		}
 	}
 }
 template <typename T>
