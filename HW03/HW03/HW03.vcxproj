@@ -128,7 +128,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="HW03.cpp" />
-    <ClCompile Include="simpleVector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="simpleVector.h" />
